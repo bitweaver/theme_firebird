@@ -1,0 +1,146 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/Attic/firebird_all.css,v 1.1 2005/06/19 06:11:11 bitweaver Exp $ */
+/**
+ * @author   xing <xing@synapse.plus.com>, firebird port by lsces <lester@lsces.co.uk>
+ * @version  $Revision: 1.1 $
+ * @theme    native
+ * @license  LGPL
+ */
+			/* tags */
+*				{font-family:verdana,'Bitstream Vera Sans',helvetica,sans-serif;}
+body			{font-weight:normal; font-size:12px; margin:0; padding:0; color:#000;}
+caption			{font-weight:bold; font-size:1.2em;}
+th				{background:#14205A; color:#fff; padding:2px; font-weight:normal;}
+hr				{border:0; border-top:1px solid #999;}
+pre,code,td.code{font-family:monospace; font-size:12px; overflow:auto; text-align:left; background:#fff; border:1px solid #900; color:#000; padding:5px;}
+/* we need to specify the width for <pre> and overflow to work in exploder */
+pre				{width:98%;}
+html>body pre	{width:auto;}
+small,.small	{font-size:0.85em; line-height:normal;}
+			/* links */
+a.create		{color:#900;}
+a.external		{background:transparent url( images/external.gif ) no-repeat right; padding-right:12px;}
+:link			{color:#b82; text-decoration:none;}
+:visited		{color:#b82; text-decoration:none;}
+:link:hover,:visited:hover	{text-decoration:none; color:#a40;}
+:link:active,:link:active	{color:#000;}
+a img			{border:0;}
+			/* common page classes */
+.body			{padding:5px 5px 10px 5px; line-height:20px;}
+.content		{text-align:justify;}
+.storage		{float:right; padding:3px; margin:0 0 5px 5px; text-align:center; background:#f5f5f5; border:1px solid #ddd;}
+.storage .item	{padding:2px;}
+.footer			{font-size:0.9em; background:#f0f0f0; border:1px solid #e0e0e0; margin-bottom:10px; padding:1px 5px;}
+.post			{clear:both;}
+.comment		{border-top:1px solid #fea;}
+.comment .post	{line-height:normal; border-left:1px dashed #999; padding-left:1em;}
+.preview		{background:transparent url( images/preview.gif ) repeat-y 50% 50%; border:1px solid #fea}
+.highlight		{font-weight:bolder;}
+.quicktag		{margin:1px;}
+.selected		{font-weight:bolder}
+.actionicon		{text-align:right;}
+.clear			{clear:both;}
+			/* parsed elements */
+.tikibox		{padding:5px; margin:5px; border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0; border-left:5px solid #900; border-right:5px solid #900; background:#f5f5f5;}
+.tikitable		{}
+.tikitable td	{border:1px solid #aaa; padding:2px;}
+.tikibar		{color:#900; border-bottom:1px dotted #999; padding:0.2em 1em;}
+.tikitoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em; clear:right;}
+.tikitoc h3		{padding:0; border-bottom:1px solid #999;}
+.tikitoc a		{color:#666;}
+.tikitoc ul		{margin:0 0 0 1em; padding:0;}
+.tikitoc ul li	{list-style:square outside;}
+.tikitoc ul ul	{margin:0 0 0 2em; padding:0;}
+			/* priorities */
+.prio1	{background:#dfc !important;}
+.prio2	{background:#efc !important;}
+.prio3	{background:#ffc !important;}
+.prio4	{background:#fec !important;}
+.prio5	{background:#fdc !important;}
+			/* image related stuff */
+.floaticon				{float:right;}
+.post .floaticon img	{display:block; padding:1px 0;}
+.icon					{vertical-align:middle; border:0;}
+.thumb					{padding:2px; margin:2px; background:#ddd; border:1px solid #b82;}
+.thumb:hover			{background:#fff; border:1px solid #a40;}
+			/* some fisheye stuff */
+.fisheye .boxcontent				{text-align:center;}
+.fisheye .box h1,.fisheye .box h2	{border:0;}
+.thumbnailblock						{width:auto; margin:0 auto;}
+.thumbnailblock .thumb				{border:0;}
+.display .image .boxcontent			{overflow:auto;}
+			/* some stickies stuff */
+.stickies textarea,.stickies input[type='text']	{background:#ff9;}
+.stickynote				{background-color:#ff9;  color:#000;  width:250px; height:250px; overflow:auto; padding:3px; margin:0 auto;}
+.stickynote .boxtitle	{border-bottom: 1px solid #dd0;}
+			/* structures */
+.structurebar,.gallerybar				{clear:both;}
+.structurebar .path,.gallerybar .path	{display:block;}
+.navigation span						{display:block; width:50%; float:left;}
+.navigation .right						{text-align:right;}
+			/* forms */
+form,textarea,select		{margin:0; padding:0;}
+html>body form,input[type='text'],
+textarea,select				{font-family:verdana,sans-serif;}
+fieldset					{border:0; border-top:2px solid #f30; margin-bottom:10px;}
+legend						{font-size:1.2em; padding:0 5px; margin-bottom:10px;}
+.tabsystem legend			{font-size:1em;}
+textarea,select				{font-size:1em;}
+#tikimain input[type="text"]{max-width:99%;}
+textarea					{width:98%;}
+.row						{padding:5px 0; clear:both; padding-top:5px;}
+.formfeedback ul,.formfeedback li	{margin:1em; padding:0; clear:both;}
+.formlabel					{float:left; width:25%; text-align:right; margin:0; font-size:95%; padding:0 0 0 0; line-height:18px; border:1px solid #e5e5e5; background:#f0f0f0;}
+.forminput					{margin:2px 0 0 26%;}
+.formhelp					{cursor:help; line-height:normal; font-size:0.9em; color:#999;}
+.submit						{text-align:center; padding-bottom:10px; padding-top:20px;}
+.minifind					{font-size:0.9em; width:200px; clear:both;}
+.minifind legend			{display:none;}
+.minifind fieldset			{border:0; padding:10px;}
+.success					{color:#090;}
+.warning					{color:#f80;}
+.error,.errorpage .boxtitle{color:#f00; font-weight:bold;}
+			/* boxes */
+.box			{margin:5px; border:1px solid #aaa;}
+.boxtitle		{padding:5px; border-bottom:1px solid #f60; font-weight:bold;}
+.boxtitle a		{color:#900;}
+.boxcontent		{padding:5px;}
+.midmenu		{font-size:0.9em;}
+.module,.module .boxcontent	{border:0; padding:0; margin:0;}
+.module			{padding:10px 7px;}
+			/* lists */
+ul,ol,dl				{margin-top:0; margin-bottom:0;}
+.module ol,.module ul,.menu ul			{margin:0; padding:0}
+.menu ul				{margin-left:1em;}
+.module ol li			{margin:0 0 0 2.5em; padding:0;}
+ul.data					{padding:0; margin:0; list-style:none;}
+ul.data li.item			{list-style:none; border-bottom:1px solid #d0d0d0; padding:5px 0; clear:both;}
+ul.data li.item .thumb	{float:right;}
+li.error,li.success,li.note,li.warning			{list-style:none;}
+.module ol li			{list-style-type:decimal;}
+.module ul li			{list-style:none}
+ul.toc li				{list-style:none;}
+ul.toc					{margin-left:1em;}
+ul.toc ul				{margin-left:1.5em; padding:0;}
+ul.toc .highlight		{background:#f5f5f5; border:1px solid #e5e5e5;}
+dl	{padding:0; margin:0.5em 0; line-height:1.3em;}
+dt	{padding:0; margin:0; width:30%; text-align:right; font-weight:bold;}
+dd	{padding:0; margin:-1.3em 0 0.5em 32%;}
+			/* tables */
+table				{line-height:normal; border-spacing:0; border-collapse:collapse; width:100%;}
+fieldset table		{margin:0 2%; width:96%;}
+#attbrowser td		{vertical-align:top; text-align:center; padding:5px;}
+table.data			{border:1px solid #666; font-size:0.9em;}
+.odd,.even			{border:1px solid #d0d0d0;}
+.odd				{background:#fcfcfc;}
+.even				{background:#f5f5f5;}
+.norecords			{font-weight:bold;}
+			/* pagination */
+.pagination			{text-align:center; color:#999; font-size:0.9em; margin:10px; line-height:2em;}
+.pagination a		{padding:0 2px; margin:0 2px; background:#eee; border:1px solid #ccc;}
+			/* menu stuff */
+.menu li				{list-style:none}
+.menu ul ul				{margin-left:1em;}
+#tikimain .menuicon		{text-align:center;}
+/* if you hide the icons from msie it goes nuts - use > hack */
+html>body #bitleft .package-menu .icon,
+html>body #bitright .package-menu .icon	{display:none;}

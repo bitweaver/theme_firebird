@@ -1,0 +1,25 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/tinymce/tinymce.css,v 1.1 2005/06/19 06:11:11 bitweaver Exp $ */
+/**
+ * @author   xing <xing@synapse.plus.com>
+ * @version  $Revision: 1.1 $
+ * @theme    olfactory
+ * @license  LGPL
+ */
+*				{font-family:'Bitstream Vera Sans',verdana,helvetica,sans-serif;}
+body			{font-weight:normal; font-size:12px; margin:0; padding:0; color:#000;}
+caption			{font-weight:bold; font-size:1.2em;}
+th				{background:#14205A; color:#fff; padding:2px; font-weight:normal;}
+hr				{border:0; border-top:1px solid #999;}
+pre,code,td.code{font-family:monospace; font-size:12px; overflow:auto; text-align:left; background:#fff; border:1px solid #900; color:#000; font-family:mono-space; text-align:left; padding:5px;}
+small,.small	{font-size:0.85em; line-height:normal;}
+			/* parsed elements */
+.tikibox		{padding:5px; margin:5px; border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0; border-left:5px solid #900; border-right:5px solid #900; background:#f5f5f5;}
+.tikitable		{}
+.tikitable td	{border:1px solid #aaa; padding:2px;}
+.tikibar		{color:#900; border-bottom:1px dotted #999; padding:0.2em 1em;}
+			/* tables */
+table				{line-height:normal; border-spacing:0; border-collapse:collapse; width:100%;}
+table .data			{border:1px solid #666; font-size:0.9em;}
+.odd td,.even td	{border-bottom:1px solid #d0d0d0;}
+.odd				{background:#fcfcfc;}
+.even				{background:#f5f5f5;}

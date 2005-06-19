@@ -1,0 +1,21 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/firebird.css,v 1.1 2005/06/19 06:11:11 bitweaver Exp $ */
+/**
+ * @author   xing <xing@synapse.plus.com>, firebird port by lsces <lester@lsces.co.uk>
+ * @version  $Revision: 1.1 $
+ * @theme    native
+ * @license  LGPL
+ */
+
+/* import settings that apply to all media */
+@import url( firebird_all.css );
+
+/* import screen media */
+@import url( firebird_screen.css );
+@import url( firebird_jstabs.css );
+@import url( firebird_cssmenus.css );
+
+/* import handheld media */
+@import url( firebird_handheld.css );
+
+/* apply print display settings */
+@import url( firebird_print.css );

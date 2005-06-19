@@ -1,0 +1,8 @@
+@import url( ../firebird.css );
+* {
+	background: #fff !important;
+	color: #000 !important;
+}
+a {
+	color: blue !important;
+}

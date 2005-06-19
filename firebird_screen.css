@@ -1,0 +1,98 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/Attic/firebird_screen.css,v 1.1 2005/06/19 06:11:11 bitweaver Exp $ */
+/**
+ * @author   xing <xing@synapse.plus.com>, firebird port by lsces <lester@lsces.co.uk>
+ * @version  $Revision: 1.1 $
+ * @theme    native
+ * @license  LGPL
+ */
+@media screen,projection {
+
+/* tags */
+body			{background:#666; text-align:center;}
+small,.small	{color:#777;}
+
+/* layout and background styling */
+#tikibar		{background:#900; border-top:1px solid #000; border-bottom:1px solid #000; font-size:0.9em; line-height:1.2em; color:#fff;}
+#bittop		{background:transparent url( images/bar_logo.png ) no-repeat left; height:100px; margin-left:auto; margin-right:auto;}
+.toplogin		{font-size:0.9em; color:#999; text-align:right; float:right; margin:0px; padding:4px 5px;}
+#wrap1			{background:transparent url( images/bar.png ) repeat-x top left;}
+#wrap2			{background:transparent url( images/title_bg_r.png ) repeat-x top right; clear:both;}
+#wrap3			{background:transparent url( images/title_bg_l.png ) no-repeat top left;}
+#wrap4			{background:#fff        url( images/title_bg_r.png ) repeat-x top right; margin:0 9px; border:1px solid #000; border-top:0;}
+#wrap5			{background:transparent url( images/menu_bg_l.gif ) repeat-y top left;}
+#tikibody		{background:transparent url( images/title_bg.png ) no-repeat top left; padding:0px 0px 1px 0px; text-align:left;}
+#tikibottom		{font-size:0.8em; color:#999; text-align:center; clear:both;}
+#bitleft,#bitright			{font-size:0.9em;}
+#bitleft .module .boxcontent	{overflow:hidden; width:100%;}
+#bitright .module .boxcontent	{overflow:hidden; width:100%;}
+#bitleft		{float:left; width:20%; margin:40px 0 0 0; background:transparent url( images/menu_bg_top.gif ) repeat-x top left;}
+.bitleft-tl	{width:7px; height:7px; float:left; background:transparent url( images/menu_bg_tl.gif ) no-repeat top left;}
+.bitleft-tr	{width:7px; height:7px; float:right; background:transparent url( images/menu_bg_tr.gif ) no-repeat top right;}
+.bitleft-r		{background:transparent url( images/menu_bg_r.gif ) no-repeat top right;}
+#bitright		{float:right; width:18%; margin:25px 0 0 0; background:transparent; clear:right;}
+#tikimain		{background:transparent url( images/firebird-mask.gif ) repeat-y right; margin:0 0 1em 0.5%;}
+.tiki-cols-1	{margin:0 1% 1em 1% !important;}
+.tiki-cols-2l	{float:left; width:79%;}
+.tiki-cols-2r	{float:left; width:81%;}
+.tiki-cols-3	{float:left; width:61%;}
+#attbrowser		{text-align:left; background:#eee;}
+#tikimain .structurebar,#tikimain .gallerybar	{font-size:10px; position:absolute; top:20px; width:620px;}
+
+/* common classes */
+.closebutton			{position:absolute; top:1px; right:1px;}
+#bittop h1,#bittop h2	{border:0; margin:0; margin-left:100px; font-weight:normal; font-family:'Palatino Linotype', serif; text-align:left; color:#555;}
+#bittop h1				{line-height:40px; font-size:3em; padding-top:30px;}
+#bittop h2				{line-height:20px; font-size:1em;}
+
+/* boxes */
+.popup					{width:200px; margin:0; padding:7px; text-align:left; background:#14205A; color:#fff;}
+#tikimain .box:before,#tikimain .box:after	{text-align:left; line-height:0.1; font-size:1px; margin:-1px; height:5px; display:block; border:none;}
+#tikimain .box:before	{content:url( images/box/tl.gif ); background:transparent url( images/box/tr.gif ) no-repeat top right;}
+#tikimain .box:after	{content:url( images/box/bl.gif ); background:transparent url( images/box/br.gif ) no-repeat bottom right ;}
+.fisheye.display .box			{border:0; margin:20px 0 10px 0;}
+.fisheye.display .box:before,.fisheye.display .box:after	{display:none !important;}
+.fisheye.display .box img		{padding:10px; border:1px solid #aaa;}
+.fisheye table .fisheyegallery	{background:transparent url( images/pkgicon_bg.png ) 50% 50% repeat;}
+
+/* forms */
+input[type="text"],input[type="password"],textarea						{border:1px solid #aaa; color:#666;}
+input[type="text"]:focus,input[type="password"]:focus,textarea:focus	{border:1px solid #000; color:#000;}
+.toplogin input							{background:transparent; color:#999; border:1px solid #eee; margin:0; height:15px; vertical-align:middle; font-size:10px;}
+.module .submit							{margin:0; padding:0; background:transparent; border:0;}
+.module .forminput, .module .formlabel	{width:auto; float:left; clear:both;}
+
+/* date settings */
+#tikimain div.date	{padding:0 0 5px 0; width:35%; float:right; text-align:right; line-height:normal;}
+.date				{font-size:0.9em; color:#999;}
+.wiki .header .date		{margin-top:-20px;}
+.blogs .header .date	{margin-top:-38px;}
+.data .date			{float:none !important; text-align:left !important; width:auto !important; color:#666 !important; margin:0 !important;}
+.post .date			{text-align:right; float:right; padding-right:5px; width:240px; margin:-35px 16px 0 0;}
+#tikimain .blogs>.header>.date{width:auto; float:none; margin:0; text-align:left;}
+.stickynote .footer	{color:#900; border:0; background:transparent; margin:1em 0 0 0; padding:0;}
+
+/* other settings */
+.blogs .avatar	{margin:0 0 1em 1em; float:right;}
+
+/* headings */
+h1,h2,h3		{font-weight:900; margin:8px 0; padding:2px 0; border-bottom:3px solid #ccc;}
+h1				{font-size:1.2em;}
+h2				{font-size:1.1em;}
+h3				{font-size:1.0em;}
+h4				{font-size:1.0em;}
+.header h1		{font-size:1.5em; padding:7px 0 15px 0px; margin:0; background:transparent; border:0;}
+.header h2		{font-size:0.9em; margin:10px 20px 0 20px; border:0;}
+.post h1		{font-size:1.4em; margin:8px 0; padding:2px 0; border-bottom:3px double #ccc;}
+.comment h1		{font-size:1.4em;}
+.comment h2		{font-size:1.2em;}
+.comment h3		{font-size:1.0em; line-height:26px;}
+.comment h1,.comment h2,.comment h3	{font-weight:bold; border:0;}
+table h1, table h2, table h3	{border:0; padding:1em 0 0 0; margin:0;}
+
+/* navigation bars */
+.navbar			{padding:1em;}
+.navbar ul		{padding:0; margin:0; list-style:none; font-size:0.8em;}
+.navbar ul li	{float:left; list-style:none; line-height:normal; padding:1px;}
+.navbar a		{border:1px solid #bbb; background:#ddd; padding:0 0.5em; margin:0 0.5em; line-height:normal;}
+.navbar a:hover	{border:1px solid #999; background:#eee;}
+}
