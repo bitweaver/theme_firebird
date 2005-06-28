@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/Attic/firebird_all.css,v 1.1 2005/06/19 06:11:11 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/Attic/firebird_all.css,v 1.2 2005/06/28 07:46:02 spiderr Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>, firebird port by lsces <lester@lsces.co.uk>
- * @version  $Revision: 1.1 $
+ * @version  $Revision: 1.2 $
  * @theme    native
  * @license  LGPL
  */
@@ -44,12 +44,12 @@ a img			{border:0;}
 .tikitable		{}
 .tikitable td	{border:1px solid #aaa; padding:2px;}
 .tikibar		{color:#900; border-bottom:1px dotted #999; padding:0.2em 1em;}
-.tikitoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em; clear:right;}
-.tikitoc h3		{padding:0; border-bottom:1px solid #999;}
-.tikitoc a		{color:#666;}
-.tikitoc ul		{margin:0 0 0 1em; padding:0;}
-.tikitoc ul li	{list-style:square outside;}
-.tikitoc ul ul	{margin:0 0 0 2em; padding:0;}
+.maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em; clear:right;}
+.maketoc h3		{padding:0; border-bottom:1px solid #999;}
+.maketoc a		{color:#666;}
+.maketoc ul		{margin:0 0 0 1em; padding:0;}
+.maketoc ul li	{list-style:square outside;}
+.maketoc ul ul	{margin:0 0 0 2em; padding:0;}
 			/* priorities */
 .prio1	{background:#dfc !important;}
 .prio2	{background:#efc !important;}
