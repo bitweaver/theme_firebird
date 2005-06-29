@@ -1,0 +1,29 @@
+/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/Attic/firebird_layout.css,v 1.2 2005/06/29 05:43:40 spiderr Exp $ */
+/**
+ * @author   xing <xing@synapse.plus.com>, firebird port by lsces <lester@lsces.co.uk>
+ * @version  $Revision: 1.2 $
+ * @theme    native
+ * @license  LGPL
+ */
+@media screen,projection {
+
+/* layout */
+#bittop			{height:100px; margin-left:auto; margin-right:auto;}
+#wrap2			{clear:both;}
+#wrap4			{margin:0 9px; border:1px solid #000; border-top:0;}
+#tikibottom		{clear:both;}
+#tikimain		{margin:0 0 1em 0.5%;}
+.tiki-cols-1	{margin:0 1% 1em 1% !important;}
+.tiki-cols-2l	{float:left; width:79%;}
+.tiki-cols-2r	{float:left; width:81%;}
+.tiki-cols-3	{float:left; width:61%;}
+#tikimain .structurebar,#tikimain .gallerybar	{font-size:10px; position:absolute; top:20px; width:620px;}
+
+/* columns */
+#bitleft .module .boxcontent	{overflow:hidden; width:100%;}
+#bitright .module .boxcontent	{overflow:hidden; width:100%;}
+#bitleft		{float:left; width:20%; margin:40px 0 0 0;}
+.bitleft-tl		{width:7px; height:7px; float:left;}
+.bitleft-tr		{width:7px; height:7px; float:right;}
+#bitright		{float:right; width:18%; margin:25px 0 0 0; clear:right;}
+}

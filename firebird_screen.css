@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/Attic/firebird_screen.css,v 1.1 2005/06/19 06:11:11 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/Attic/firebird_screen.css,v 1.2 2005/06/29 05:43:40 spiderr Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>, firebird port by lsces <lester@lsces.co.uk>
- * @version  $Revision: 1.1 $
+ * @version  $Revision: 1.2 $
  * @theme    native
  * @license  LGPL
  */
@@ -11,38 +11,33 @@
 body			{background:#666; text-align:center;}
 small,.small	{color:#777;}
 
-/* layout and background styling */
+/* adding some basic styling */
 #tikibar		{background:#900; border-top:1px solid #000; border-bottom:1px solid #000; font-size:0.9em; line-height:1.2em; color:#fff;}
-#bittop		{background:transparent url( images/bar_logo.png ) no-repeat left; height:100px; margin-left:auto; margin-right:auto;}
 .toplogin		{font-size:0.9em; color:#999; text-align:right; float:right; margin:0px; padding:4px 5px;}
-#wrap1			{background:transparent url( images/bar.png ) repeat-x top left;}
-#wrap2			{background:transparent url( images/title_bg_r.png ) repeat-x top right; clear:both;}
-#wrap3			{background:transparent url( images/title_bg_l.png ) no-repeat top left;}
-#wrap4			{background:#fff        url( images/title_bg_r.png ) repeat-x top right; margin:0 9px; border:1px solid #000; border-top:0;}
-#wrap5			{background:transparent url( images/menu_bg_l.gif ) repeat-y top left;}
 #tikibody		{background:transparent url( images/title_bg.png ) no-repeat top left; padding:0px 0px 1px 0px; text-align:left;}
-#tikibottom		{font-size:0.8em; color:#999; text-align:center; clear:both;}
-#bitleft,#bitright			{font-size:0.9em;}
-#bitleft .module .boxcontent	{overflow:hidden; width:100%;}
-#bitright .module .boxcontent	{overflow:hidden; width:100%;}
-#bitleft		{float:left; width:20%; margin:40px 0 0 0; background:transparent url( images/menu_bg_top.gif ) repeat-x top left;}
-.bitleft-tl	{width:7px; height:7px; float:left; background:transparent url( images/menu_bg_tl.gif ) no-repeat top left;}
-.bitleft-tr	{width:7px; height:7px; float:right; background:transparent url( images/menu_bg_tr.gif ) no-repeat top right;}
+#bittop			{background:transparent url( images/bar_logo.png ) no-repeat left;}
+#wrap1			{background:transparent url( images/bar.png ) repeat-x top left;}
+#wrap2			{background:transparent url( images/title_bg_r.png ) repeat-x top right;}
+#wrap3			{background:transparent url( images/title_bg_l.png ) no-repeat top left;}
+#wrap4			{background:#fff        url( images/title_bg_r.png ) repeat-x top right;}
+#wrap5			{background:transparent url( images/menu_bg_l.gif ) repeat-y top left;}
+#tikibottom		{font-size:0.8em; color:#999; text-align:center;}
+
+/* columns */
+#bitleft		{background:transparent url( images/menu_bg_top.gif ) repeat-x top left;}
+.bitleft-tl		{background:transparent url( images/menu_bg_tl.gif ) no-repeat top left;}
+.bitleft-tr		{background:transparent url( images/menu_bg_tr.gif ) no-repeat top right;}
 .bitleft-r		{background:transparent url( images/menu_bg_r.gif ) no-repeat top right;}
-#bitright		{float:right; width:18%; margin:25px 0 0 0; background:transparent; clear:right;}
-#tikimain		{background:transparent url( images/firebird-mask.gif ) repeat-y right; margin:0 0 1em 0.5%;}
-.tiki-cols-1	{margin:0 1% 1em 1% !important;}
-.tiki-cols-2l	{float:left; width:79%;}
-.tiki-cols-2r	{float:left; width:81%;}
-.tiki-cols-3	{float:left; width:61%;}
+#bitright		{background:transparent;}
+#bitleft,#bitright	{font-size:0.9em;}
+
 #attbrowser		{text-align:left; background:#eee;}
-#tikimain .structurebar,#tikimain .gallerybar	{font-size:10px; position:absolute; top:20px; width:620px;}
 
 /* common classes */
-.closebutton			{position:absolute; top:1px; right:1px;}
 #bittop h1,#bittop h2	{border:0; margin:0; margin-left:100px; font-weight:normal; font-family:'Palatino Linotype', serif; text-align:left; color:#555;}
 #bittop h1				{line-height:40px; font-size:3em; padding-top:30px;}
 #bittop h2				{line-height:20px; font-size:1em;}
+.closebutton			{position:absolute; top:1px; right:1px;}
 
 /* boxes */
 .popup					{width:200px; margin:0; padding:7px; text-align:left; background:#14205A; color:#fff;}

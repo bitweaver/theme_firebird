@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/firebird.css,v 1.1 2005/06/19 06:11:11 bitweaver Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/firebird.css,v 1.2 2005/06/29 05:43:40 spiderr Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>, firebird port by lsces <lester@lsces.co.uk>
- * @version  $Revision: 1.1 $
+ * @version  $Revision: 1.2 $
  * @theme    native
  * @license  LGPL
  */
@@ -10,6 +10,7 @@
 @import url( firebird_all.css );
 
 /* import screen media */
+@import url( firebird_layout.css );
 @import url( firebird_screen.css );
 @import url( firebird_jstabs.css );
 @import url( firebird_cssmenus.css );
