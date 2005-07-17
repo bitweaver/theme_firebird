@@ -1,7 +1,7 @@
 {include file="bitpackage:kernel/header.tpl"}
 {strip}
 {if $print_page ne "y"}
-	{if $gBitSystemPrefs.feature_bidi eq 'y'}
+	{if $gBitSystem->isFeatureActive( 'feature_bidi' )}
 		<div dir="rtl">
 	{/if}
 
@@ -32,7 +32,7 @@
 			<h2>{$gBitSystemPrefs.site_slogan}</h2>
 		</div><!-- end #bittop -->
 
-		{if $gBitSystemPrefs.feature_top_bar eq 'y'}
+		{if $gBitSystem->isFeatureActive( 'feature_top_bar' )}
 			<div id="bittopbarwrap">
 			    {include file="bitpackage:kernel/top_bar.tpl"}
 			</div>
@@ -40,7 +40,7 @@
 
 		<div id="wrap2"><div id="wrap3"><div id="wrap4"><div id="wrap5">
 			<div id="tikibody">
-				{if $gBitSystemPrefs.feature_left_column eq 'y' && $l_modules && !$gHideModules}
+				{if $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules}
 					<div id="bitleft">
 						<div class="bitleft-tl"></div>
 						<div class="bitleft-tr"></div>
@@ -51,7 +51,7 @@
 					</div><!-- end #bitleft -->
 				{/if}
 
-				{if $gBitSystemPrefs.feature_right_column eq 'y' && $r_modules && !$gHideModules}
+				{if $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}
 					<div id="bitright">
 						{section name=homeix loop=$r_modules}
 							{$r_modules[homeix].data}
@@ -60,11 +60,11 @@
 				{/if}
 
 				<div id="tikimain" class="tiki-cols-
-					{if $gBitSystemPrefs.feature_left_column eq 'y' && $l_modules && !$gHideModules and $gBitSystemPrefs.feature_right_column eq 'y' && $r_modules && !$gHideModules}
+					{if $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules and $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}
 						3
-					{elseif $gBitSystemPrefs.feature_left_column eq 'y' && $l_modules && !$gHideModules}
+					{elseif $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules}
 						2l
-					{elseif $gBitSystemPrefs.feature_right_column eq 'y' && $r_modules && !$gHideModules}
+					{elseif $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}
 						2r
 					{else}
 						1
@@ -82,13 +82,13 @@
 		</div></div></div></div><!-- end #wrap2,3,4,5 -->
 
 		<div id="tikibottom">
-			{if $gBitSystemPrefs.feature_bot_bar eq 'y'}
+			{if $gBitSystem->isFeatureActive( 'feature_bot_bar' )}
 				{include file="bitpackage:kernel/bot_bar.tpl"}
 			{/if}
 		</div><!-- end #tikibottom -->
 	</div><!-- end #wrap1 -->
 
-	{if $gBitSystemPrefs.feature_bidi eq 'y'}
+	{if $gBitSystem->isFeatureActive( 'feature_bidi' )}
 		</div>
 	{/if}
 
