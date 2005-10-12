@@ -1,5 +1,5 @@
 @import url( ../firebird.css );
-#tikibar, #bittopbarwrap, #nav li ul, input[type="submit"]
+#bitbar, #bittopbarwrap, #nav li ul, input[type="submit"]
 	{background: #009 !important;}
-.tikibox
+.bitbox
 	{border-color: #009;}

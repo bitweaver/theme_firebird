@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/Attic/firebird_screen.css,v 1.2 2005/06/29 05:43:40 spiderr Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/Attic/firebird_screen.css,v 1.3 2005/10/12 15:13:56 spiderr Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>, firebird port by lsces <lester@lsces.co.uk>
- * @version  $Revision: 1.2 $
+ * @version  $Revision: 1.3 $
  * @theme    native
  * @license  LGPL
  */
@@ -12,16 +12,16 @@ body			{background:#666; text-align:center;}
 small,.small	{color:#777;}
 
 /* adding some basic styling */
-#tikibar		{background:#900; border-top:1px solid #000; border-bottom:1px solid #000; font-size:0.9em; line-height:1.2em; color:#fff;}
+#bitbar		{background:#900; border-top:1px solid #000; border-bottom:1px solid #000; font-size:0.9em; line-height:1.2em; color:#fff;}
 .toplogin		{font-size:0.9em; color:#999; text-align:right; float:right; margin:0px; padding:4px 5px;}
-#tikibody		{background:transparent url( images/title_bg.png ) no-repeat top left; padding:0px 0px 1px 0px; text-align:left;}
+#bitbody		{background:transparent url( images/title_bg.png ) no-repeat top left; padding:0px 0px 1px 0px; text-align:left;}
 #bittop			{background:transparent url( images/bar_logo.png ) no-repeat left;}
 #wrap1			{background:transparent url( images/bar.png ) repeat-x top left;}
 #wrap2			{background:transparent url( images/title_bg_r.png ) repeat-x top right;}
 #wrap3			{background:transparent url( images/title_bg_l.png ) no-repeat top left;}
 #wrap4			{background:#fff        url( images/title_bg_r.png ) repeat-x top right;}
 #wrap5			{background:transparent url( images/menu_bg_l.gif ) repeat-y top left;}
-#tikibottom		{font-size:0.8em; color:#999; text-align:center;}
+#bitbottom		{font-size:0.8em; color:#999; text-align:center;}
 
 /* columns */
 #bitleft		{background:transparent url( images/menu_bg_top.gif ) repeat-x top left;}
@@ -41,9 +41,9 @@ small,.small	{color:#777;}
 
 /* boxes */
 .popup					{width:200px; margin:0; padding:7px; text-align:left; background:#14205A; color:#fff;}
-#tikimain .box:before,#tikimain .box:after	{text-align:left; line-height:0.1; font-size:1px; margin:-1px; height:5px; display:block; border:none;}
-#tikimain .box:before	{content:url( images/box/tl.gif ); background:transparent url( images/box/tr.gif ) no-repeat top right;}
-#tikimain .box:after	{content:url( images/box/bl.gif ); background:transparent url( images/box/br.gif ) no-repeat bottom right ;}
+#bitmain .box:before,#bitmain .box:after	{text-align:left; line-height:0.1; font-size:1px; margin:-1px; height:5px; display:block; border:none;}
+#bitmain .box:before	{content:url( images/box/tl.gif ); background:transparent url( images/box/tr.gif ) no-repeat top right;}
+#bitmain .box:after	{content:url( images/box/bl.gif ); background:transparent url( images/box/br.gif ) no-repeat bottom right ;}
 .fisheye.display .box			{border:0; margin:20px 0 10px 0;}
 .fisheye.display .box:before,.fisheye.display .box:after	{display:none !important;}
 .fisheye.display .box img		{padding:10px; border:1px solid #aaa;}
@@ -57,14 +57,13 @@ input[type="text"]:focus,input[type="password"]:focus,textarea:focus	{border:1px
 .module .forminput, .module .formlabel	{width:auto; float:left; clear:both;}
 
 /* date settings */
-#tikimain div.date	{padding:0 0 5px 0; width:35%; float:right; text-align:right; line-height:normal;}
-.date				{font-size:0.9em; color:#999;}
-.wiki .header .date		{margin-top:-20px;}
-.blogs .header .date	{margin-top:-38px;}
-.data .date			{float:none !important; text-align:left !important; width:auto !important; color:#666 !important; margin:0 !important;}
-.post .date			{text-align:right; float:right; padding-right:5px; width:240px; margin:-35px 16px 0 0;}
-#tikimain .blogs>.header>.date{width:auto; float:none; margin:0; text-align:left;}
-.stickynote .footer	{color:#900; border:0; background:transparent; margin:1em 0 0 0; padding:0;}
+.date						{color:#999; font-size:0.9em;}
+.wiki .header .date			{padding:0 0 5px 0; width:35%; float:right; text-align:right; line-height:normal; margin-top:-20px;}
+.blogs .post .header .date	{padding:0 0 5px 0; width:35%; float:right; text-align:right; line-height:normal; margin:-38px 5px 0 0;}
+.comment .post .date		{}
+#bitmain .blogs>.header>.date	{width:auto; float:none; margin:0; text-align:left;}
+
+.stickynote .footer		{color:#900; border:0; background:transparent; margin:1em 0 0 0; padding:0;}
 
 /* other settings */
 .blogs .avatar	{margin:0 0 1em 1em; float:right;}
@@ -80,9 +79,9 @@ h4				{font-size:1.0em;}
 .post h1		{font-size:1.4em; margin:8px 0; padding:2px 0; border-bottom:3px double #ccc;}
 .comment h1		{font-size:1.4em;}
 .comment h2		{font-size:1.2em;}
-.comment h3		{font-size:1.0em; line-height:26px;}
-.comment h1,.comment h2,.comment h3	{font-weight:bold; border:0;}
-table h1, table h2, table h3	{border:0; padding:1em 0 0 0; margin:0;}
+.comment h3		{font-size:1.0em; margin:2em 0 0 0;}
+.comment .content	{overflow:auto;}
+table h1, table h2, table h3	{border:0; margin:0; padding:1em 0 0 0;}
 
 /* navigation bars */
 .navbar			{padding:1em;}

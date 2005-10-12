@@ -1,7 +1,7 @@
-/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/Attic/firebird_all.css,v 1.3 2005/08/07 17:45:06 squareing Exp $ */
+/* $Header: /cvsroot/bitweaver/_bit_styles/firebird/Attic/firebird_all.css,v 1.4 2005/10/12 15:13:56 spiderr Exp $ */
 /**
  * @author   xing <xing@synapse.plus.com>, firebird port by lsces <lester@lsces.co.uk>
- * @version  $Revision: 1.3 $
+ * @version  $Revision: 1.4 $
  * @theme    native
  * @license  LGPL
  */
@@ -32,7 +32,7 @@ a img			{border:0;}
 .storage .item	{padding:2px;}
 .footer			{font-size:0.9em; background:#f0f0f0; border:1px solid #e0e0e0; margin-bottom:10px; padding:1px 5px;}
 .post			{clear:both;}
-.comment		{border-top:1px solid #fea;}
+.comment		{border-top:1px solid #fea; color:#666;}
 .comment .post	{line-height:normal; border-left:1px dashed #999; padding-left:1em;}
 .preview		{background:transparent url( images/preview.gif ) repeat-y 50% 50%; border:1px solid #fea}
 .highlight		{font-weight:bolder;}
@@ -41,10 +41,10 @@ a img			{border:0;}
 .actionicon		{text-align:right;}
 .clear			{clear:both;}
 			/* parsed elements */
-.tikibox		{padding:5px; margin:5px; border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0; border-left:5px solid #900; border-right:5px solid #900; background:#f5f5f5;}
-.tikitable		{}
-.tikitable td	{border:1px solid #aaa; padding:2px;}
-.tikibar		{color:#900; border-bottom:1px dotted #999; padding:0.2em 1em;}
+.bitbox		{padding:5px; margin:5px; border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0; border-left:5px solid #900; border-right:5px solid #900; background:#f5f5f5;}
+.bittable		{}
+.bittable td	{border:1px solid #aaa; padding:2px;}
+.bitbar		{color:#900; border-bottom:1px dotted #999; padding:0.2em 1em;}
 .maketoc		{font-size:0.9em; width:35%; line-height:normal; float:right; border:1px solid #999; background:#eee; margin:0 0 1em 1em; padding:1em; clear:right;}
 .maketoc h3		{padding:0; border-bottom:1px solid #999;}
 .maketoc a		{color:#666;}
@@ -59,7 +59,8 @@ a img			{border:0;}
 .prio5	{background:#fdc !important;}
 			/* image related stuff */
 .floaticon				{float:right;}
-.post .floaticon img	{display:block; padding:1px 0;}
+.blogs .post .floaticon		{background:#fff; border:1px solid #ccc; margin:0 0 3px 5px; padding:2px;}
+.blogs .post .floaticon a	{display:block; padding:1px 0;}
 .icon					{vertical-align:middle; border:0;}
 .thumb					{padding:2px; margin:2px; background:#ddd; border:1px solid #b82;}
 .thumb:hover			{background:#fff; border:1px solid #a40;}
@@ -86,12 +87,13 @@ fieldset					{border:0; border-top:2px solid #f30; margin-bottom:10px;}
 legend						{font-size:1.2em; padding:0 5px; margin-bottom:10px;}
 .tabsystem legend			{font-size:1em;}
 textarea,select				{font-size:1em;}
-#tikimain input[type="text"]{max-width:99%;}
+#bitmain input[type="text"]	{max-width:99%;}
 textarea					{width:98%;}
 .row						{padding:5px 0; clear:both; padding-top:5px;}
 .formfeedback ul,.formfeedback li	{margin:1em; padding:0; clear:both;}
 .formlabel					{float:left; width:25%; text-align:right; margin:0; font-size:95%; padding:0 0 0 0; line-height:18px; border:1px solid #e5e5e5; background:#f0f0f0;}
-.forminput					{margin:2px 0 0 26%;}
+.forminput					{float:right; width:74%; overflow:hidden; margin-top:2px;}
+html>body .forminput		{float:none; width:auto; overflow:visible; margin:2px 0 0 26%;}
 .formhelp					{cursor:help; line-height:normal; font-size:0.9em; color:#999;}
 .submit						{text-align:center; padding-bottom:10px; padding-top:20px;}
 .minifind					{font-size:0.9em; width:200px; clear:both;}
@@ -141,7 +143,7 @@ table.data			{border:1px solid #666; font-size:0.9em;}
 			/* menu stuff */
 .menu li				{list-style:none}
 .menu ul ul				{margin-left:1em;}
-#tikimain .menuicon		{text-align:center;}
+#bitmain .menuicon		{text-align:center;}
 /* if you hide the icons from msie it goes nuts - use > hack */
 html>body #bitleft .package-menu .icon,
 html>body #bitright .package-menu .icon	{display:none;}
