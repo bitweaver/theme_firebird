@@ -15,7 +15,8 @@
 				{if $gBitUser->isRegistered()}
 					{tr}logged in as{/tr} {displayname}<br /><a href="{$smarty.const.USERS_PKG_URL}logout.php">{tr}logout{/tr}</a>
 				{else}
-					{form ipackage="users" ifile="validate.php"}
+					{assign var=force_secure value=$gBitSystem->isFeatureActive("https_login_required")}
+					{form ipackage="users" ifile="validate.php" secure=$force_secure}
 						<input type="text" name="user" alt="user name" size="10" value="username" onfocus="this.value=''" /><br />
 						<input type="password" name="pass" alt="password" size="10" value="password" onfocus="this.value=''" /><br />
 						<input type="image" src="{$smarty.const.THEMES_PKG_URL}styles/native/images/login.gif" style="border:0;" name="login" value="{tr}login{/tr}" />
