@@ -6,7 +6,7 @@
 	{/if}
 
 	<div id="bitbar">
-		Welcome to {$siteTitle|default:"bitweaver"}
+		Welcome to {$gBitSystemPrefs.siteTitle|default:"bitweaver"}
 	</div>
 
 	<div id="wrap1">
@@ -29,7 +29,7 @@
 					{/form}
 				{/if}
 			</div>
-			<h1>{$siteTitle|default:"bitweaver"}</h1>
+			<h1>{$gBitSystemPrefs.siteTitle|default:"bitweaver"}</h1>
 			<h2>{$gBitSystemPrefs.site_slogan}</h2>
 		</div><!-- end #bittop -->
 
