@@ -6,7 +6,7 @@
 	{/if}
 
 	<div id="bitbar">
-		Welcome to {$gBitSystemPrefs.siteTitle|default:"bitweaver"}
+		Welcome to {$gBitSystemPrefs.site_title|default:"bitweaver"}
 	</div>
 
 	<div id="wrap1">
@@ -23,13 +23,13 @@
 						{if $rememberme ne 'disabled'}
 							<input type="hidden" name="rme" id="rme" value="on" />
 						{/if}
-						{if $gBitSystem->isFeatureActive( 'allowRegister' )}
+						{if $gBitSystem->isFeatureActive( 'allow_register' )}
 							<br /><a href="{$smarty.const.USERS_PKG_URL}register.php">{tr}register{/tr}</a>
 						{/if}
 					{/form}
 				{/if}
 			</div>
-			<h1>{$gBitSystemPrefs.siteTitle|default:"bitweaver"}</h1>
+			<h1>{$gBitSystemPrefs.site_title|default:"bitweaver"}</h1>
 			<h2>{$gBitSystemPrefs.site_slogan}</h2>
 		</div><!-- end #bittop -->
 
