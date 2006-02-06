@@ -1,7 +1,7 @@
 {include file="bitpackage:kernel/header.tpl"}
 {strip}
 {if $print_page ne "y"}
-	{if $gBitSystem->isFeatureActive( 'feature_bidi' )}
+	{if $gBitSystem->isFeatureActive( 'bidirectional_text' )}
 		<div dir="rtl">
 	{/if}
 
@@ -33,7 +33,7 @@
 			<h2>{$gBitSystemPrefs.site_slogan}</h2>
 		</div><!-- end #bittop -->
 
-		{if $gBitSystem->isFeatureActive( 'feature_top_bar' )}
+		{if $gBitSystem->isFeatureActive( 'top_bar' )}
 			<div id="bittopbarwrap">
 			    {include file="bitpackage:kernel/top_bar.tpl"}
 			</div>
@@ -41,7 +41,7 @@
 
 		<div id="wrap2"><div id="wrap3"><div id="wrap4"><div id="wrap5">
 			<div id="bitbody">
-				{if $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules}
+				{if $gBitSystem->isFeatureActive( 'left_column' ) && $l_modules && !$gHideModules}
 					<div id="bitleft">
 						<div class="bitleft-tl"></div>
 						<div class="bitleft-tr"></div>
@@ -52,7 +52,7 @@
 					</div><!-- end #bitleft -->
 				{/if}
 
-				{if $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}
+				{if $gBitSystem->isFeatureActive( 'right_column' ) && $r_modules && !$gHideModules}
 					<div id="bitright">
 						{section name=homeix loop=$r_modules}
 							{$r_modules[homeix].data}
@@ -60,17 +60,7 @@
 					</div><!-- end #bitright -->
 				{/if}
 
-				<div id="bitmain" class="bit-cols-
-					{if $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules and $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}
-						3
-					{elseif $gBitSystem->isFeatureActive( 'feature_left_column' ) && $l_modules && !$gHideModules}
-						2l
-					{elseif $gBitSystem->isFeatureActive( 'feature_right_column' ) && $r_modules && !$gHideModules}
-						2r
-					{else}
-						1
-					{/if}
-				">
+				<div id="bitmain" class="bit-cols-{if $gBitSystem->isFeatureActive( 'left_column' ) && $l_modules && !$gHideModules and $gBitSystem->isFeatureActive( 'right_column' ) && $r_modules && !$gHideModules}3{elseif $gBitSystem->isFeatureActive( 'left_column' ) && $l_modules && !$gHideModules}2l{elseif $gBitSystem->isFeatureActive( 'right_column' ) && $r_modules && !$gHideModules}2r{else}1{/if}">
 					{include file="bitpackage:liberty/display_structure.tpl"}
 					<a style="padding:0;margin:0;border:0;" name="content"></a>
 					{if $pageError}
@@ -84,13 +74,13 @@
 		</div></div></div></div><!-- end #wrap2,3,4,5 -->
 
 		<div id="bitbottom">
-			{if $gBitSystem->isFeatureActive( 'feature_bot_bar' )}
+			{if $gBitSystem->isFeatureActive( 'bot_bar' )}
 				{include file="bitpackage:kernel/bot_bar.tpl"}
 			{/if}
 		</div><!-- end #bitbottom -->
 	</div><!-- end #wrap1 -->
 
-	{if $gBitSystem->isFeatureActive( 'feature_bidi' )}
+	{if $gBitSystem->isFeatureActive( 'bidirectional_text' )}
 		</div>
 	{/if}
 
