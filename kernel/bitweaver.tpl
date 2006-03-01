@@ -6,7 +6,7 @@
 	{/if}
 
 	<div id="bitbar">
-		Welcome to {$gBitSystemPrefs.site_title|default:"bitweaver"}
+		Welcome to {$gBitSystem->getConfig('site_title')|default:"bitweaver"}
 	</div>
 
 	<div id="wrap1">
@@ -29,8 +29,8 @@
 					{/form}
 				{/if}
 			</div>
-			<h1>{$gBitSystemPrefs.site_title|default:"bitweaver"}</h1>
-			<h2>{$gBitSystemPrefs.site_slogan}</h2>
+			<h1>{$gBitSystem->getConfig('site_title')|default:"bitweaver"}</h1>
+			<h2>{$gBitSystem->getConfig('site_slogan')}</h2>
 		</div><!-- end #bittop -->
 
 		{if $gBitSystem->isFeatureActive( 'top_bar' )}
