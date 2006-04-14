@@ -1,5 +1,5 @@
 <div class="header">
-	{if $gBitSystem->isFeatureActive( 'page_title' )}
+	{if $gBitSystem->isFeatureActive( 'wiki_page_title' )}
 		<h1>{$pageInfo.title|escape}</h1>
 		{if $cached_page eq 'y'}<span class="cached">(cached)</span>{/if}
 	{/if}
