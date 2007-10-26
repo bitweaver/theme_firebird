@@ -45,6 +45,12 @@
 			</div>
 		{/if}
 
+		{if $gBitSystem->isFeatureActive( 'site_top_column' ) && $t_modules && !$gHideModules}
+			{section name=homeix loop=$t_modules}
+				{$t_modules[homeix].data}
+			{/section}
+		{/if}
+
 		<div id="wrap2"><div id="wrap3"><div id="wrap4"><div id="wrap5">
 			<div id="bitbody">
 				{if $gBitSystem->isFeatureActive( 'site_left_column' ) && $l_modules && !$gHideModules}
